@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falling Sand Simulation</title>
+    <script src="./Grid.js" defer></script>
+    <script src="./fallingSand.js" defer></script>
+    <script src="./Material.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: dimgrey;
+        }
+
+        canvas {
+            border: 1px solid black;
+            background-color: darkslategrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Falling Sand Simulation</h1>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <label for="sandColorPicker">Sand Color:</label>
+    <input type="color" id="sandColorPicker" value="#C2B280" />
+    <br />
+    <label for="cellSizeInput">Cell Size:</label>
+    <input type="number" id="cellSizeInput" value="10" min="1" max="100" />
+    <br />
+    <label for="materialSelect">Select Material:</label>
+    <select id="materialSelect">
+        <option value="sand">Sand</option>
+        <option value="water">Water</option>
+        <option value="wood">Wood</option>
+        <option value="fire">Fire</option>
+        <option value="smoke">Smoke</option>
+    </select>
+</body>
+</html>
