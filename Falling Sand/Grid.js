@@ -38,6 +38,11 @@ class Grid {
         return this.grid[index] === 0;
     }
 
+    //
+    //Farbenfunktionen
+    //
+
+    //varriert eine Farbe leicht, damit ein effekt von zb. Sand zu erzielen
     varyColor(color) {
         const hsv = this.rgb2hsv(color[0], color[1], color[2]);
         hsv.h = Math.floor(hsv.h)
